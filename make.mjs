@@ -58,6 +58,6 @@ for (const [from, to] of Object.entries(map)) {
 
 // Any other address goes to the home page.
 writeFileSync("site/404.html", page(SITE + "/"));
-writeFileSync("site/CNAME", "palmriveracademy.edu.vn\n");
+writeFileSync("site/CNAME", "www.palmriveracademy.edu.vn\n");
 writeFileSync("site/.nojekyll", "");
 console.log(`Wrote ${Object.keys(map).length} redirect pages.`);
