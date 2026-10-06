@@ -40,7 +40,6 @@ const page = (to) => `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Palm River Academy has moved</title>
 <link rel="canonical" href="${to}">
-<meta name="robots" content="noindex">
 <meta http-equiv="refresh" content="0; url=${to}">
 <script>location.replace(${JSON.stringify(to)} + location.hash);</script>
 <style>body{font:16px/1.5 system-ui,sans-serif;margin:3rem 1rem;text-align:center;color:#1d3557}a{color:#1d6fb8}</style>

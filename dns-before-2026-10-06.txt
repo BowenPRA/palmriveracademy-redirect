@@ -1,0 +1,32 @@
+Tue Oct  6 19:25:07 SEAST 2026
+== NS palmriveracademy.edu.vn
+
+palmriveracademy.edu.vn	nameserver = ns10.wixdns.net
+palmriveracademy.edu.vn	nameserver = ns11.wixdns.net
+== A palmriveracademy.edu.vn
+
+Name:    palmriveracademy.edu.vn
+Addresses:  185.230.63.186
+	  185.230.63.171
+	  185.230.63.107
+
+== MX palmriveracademy.edu.vn
+
+palmriveracademy.edu.vn	MX preference = 40, mail exchanger = alt3.aspmx.l.google.com
+palmriveracademy.edu.vn	MX preference = 20, mail exchanger = alt1.aspmx.l.google.com
+palmriveracademy.edu.vn	MX preference = 10, mail exchanger = aspmx.l.google.com
+palmriveracademy.edu.vn	MX preference = 30, mail exchanger = alt2.aspmx.l.google.com
+palmriveracademy.edu.vn	MX preference = 50, mail exchanger = alt4.aspmx.l.google.com
+== TXT palmriveracademy.edu.vn
+
+palmriveracademy.edu.vn	text =
+
+	"v=spf1 include:_spf.google.com ~all"
+== www
+www.palmriveracademy.edu.vn	canonical name = cdn3.wixdns.net
+== _dmarc
+
+_dmarc.palmriveracademy.edu.vn	canonical name = _dmarc.wixemails.com
+_dmarc.wixemails.com	text =
+
+	"v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email"
