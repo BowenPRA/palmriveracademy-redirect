@@ -1,0 +1,3 @@
+# Netlify publishes the generated site folder; the redirects themselves are in site/_redirects (built by make.mjs).
+[build]
+  publish = "site"

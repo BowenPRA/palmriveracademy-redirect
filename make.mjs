@@ -56,6 +56,12 @@ for (const [from, to] of Object.entries(map)) {
   writeFileSync(dir.replace(/\/$/, "") + "/index.html", page(SITE + to));
 }
 
+// Netlify answers with real 301s from _redirects ("!" = even where a page file exists).
+// The pages above stay as a fallback for any host that serves files only.
+const rules = Object.entries(map).map(([from, to]) => `${from.padEnd(52)} ${SITE + to}  301!`);
+rules.push(`${"/*".padEnd(52)} ${SITE}/  301!`);
+writeFileSync("site/_redirects", rules.join("\n") + "\n");
+
 // Any other address goes to the home page.
 writeFileSync("site/404.html", page(SITE + "/"));
 writeFileSync("site/CNAME", "www.palmriveracademy.edu.vn\n");
